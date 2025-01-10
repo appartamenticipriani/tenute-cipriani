@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenute Cipriani</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fffaf0;
+            color: #333;
+        }
+        header {
+            background-color: #ffcc99;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffa366;
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background: url('hero-image.jpg') center/cover no-repeat;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            background: rgba(255, 102, 51, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        footer {
+            background-color: #ffa366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #ff944d;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background-color: #ff7f24;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tenute Cipriani</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#azienda">Azienda Agricola</a>
+        <a href="#appartamenti">Appartamenti</a>
+        <a href="#chi-siamo">Chi Siamo</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+    <div class="hero" id="home">
+        <h1>Benvenuti alle Tenute Cipriani</h1>
+    </div>
+    <section id="azienda">
+        <h2>Azienda Agricola Cipriani Barbara</h2>
+        <p>Produciamo prodotti di alta qualità nel cuore della campagna italiana.</p>
+    </section>
+    <section id="appartamenti">
+        <h2>Appartamenti Cipriani</h2>
+        <p>Scopri le nostre case vacanze accoglienti e immerse nella natura.</p>
+    </section>
+    <section id="chi-siamo">
+        <h2>Chi Siamo</h2>
+        <p>Tenute Cipriani è un'azienda a conduzione familiare che unisce tradizione e ospitalità.</p>
+    </section>
+    <section id="contatti">
+        <h2>Contatti</h2>
+        <p>Indirizzo: Via delle Tenute, 123, Campagna Italiana</p>
+        <p>Email: info@tenutecipriani.it</p>
+        <p>Telefono: +39 123 456 789 (WhatsApp)</p>
+        <p>Instagram: <a href="https://instagram.com/tenutecipriani" target="_blank">@tenutecipriani</a></p>
+        <form class="contact-form">
+            <input type="text" placeholder="Il tuo nome" required>
+            <input type="email" placeholder="La tua email" required>
+            <textarea placeholder="Il tuo messaggio" rows="5" required></textarea>
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Tenute Cipriani. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
